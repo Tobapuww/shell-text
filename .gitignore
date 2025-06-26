@@ -1,0 +1,15 @@
+.gradle/
+.idea/
+build/
+.cxx/
+*.iml
+local.properties
+.DS_Store
+.vscode/
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.log
+.ui/
+test_samples/
+*.zip

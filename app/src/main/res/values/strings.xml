@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Shell Text</string>
+    <string name="welcome">欢迎使用Shell脚本安全检测工具！</string>
+    <string name="select_file">选择文件</string>
+    <string name="scan">开始扫描</string>
+    <string name="scan_another">扫描其他文件</string>
+    <string name="download_report">下载报告</string>
+    <string name="total_files">扫描文件数</string>
+    <string name="total_issues">检测到的危险命令</string>
+    <string name="safety_score">安全评分</string>
+    <string name="file_details">文件详情</string>
+    <string name="about">关于</string>
+    <string name="rules">检测规则</string>
+    <string name="settings">设置</string>
+    <string name="theme">主题</string>
+    <string name="language">语言</string>
+    <string name="dark_mode">深色模式</string>
+    <string name="light_mode">浅色模式</string>
+    <string name="system_mode">跟随系统</string>
+    <string name="remove">移除</string>
+    <string name="error_file_type">请选择.sh文件或.zip文件</string>
+    <string name="no_files">没有扫描到任何文件</string>
+    <string name="safe">安全</string>
+    <string name="high_risk">高风险</string>
+    <string name="medium_risk">中风险</string>
+    <string name="low_risk">低风险</string>
+    <string name="export_success">报告已导出</string>
+    <string name="export_failed">报告导出失败</string>
+    <!-- 其他界面和规则相关文本 -->
+</resources>

@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.tobapuw.shelltext'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.tobapuw.shelltext"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.4'
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation platform('androidx.compose:compose-bom:2023.10.01')
+    implementation "androidx.core:core-ktx:1.9.0"
+    implementation "androidx.activity:activity-compose:1.7.2"
+    implementation "androidx.compose.ui:ui"
+    implementation "androidx.compose.material3:material3"
+    implementation "androidx.compose.ui:ui-tooling-preview"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2"
+    implementation "androidx.compose.foundation:foundation"
+    implementation "androidx.compose.material:material-icons-extended"
+    implementation "androidx.navigation:navigation-compose:2.7.3"
+    implementation "net.lingala.zip4j:zip4j:2.11.5" // Zip解压
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.31.5-beta" // 主题切换
+    implementation "com.google.accompanist:accompanist-appcompat-theme:0.31.5-beta"
+    implementation "com.google.accompanist:accompanist-permissions:0.31.5-beta"
+    // 多语言切换
+    implementation "com.google.android.material:material:1.9.0"
+    
+    debugImplementation "androidx.compose.ui:ui-tooling"
+    debugImplementation "androidx.compose.ui:ui-test-manifest"
+}
